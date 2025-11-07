@@ -51,11 +51,11 @@ public class WeeklyTemperatures {
                 double sum = 0;
                 System.out.println("\nWeekly Temperatures:");
                 for (int i = 0; i < days.size(); i++) {
-                    System.out.println(days.get(i) + ": " + temps.get(i) + "°");
+                    System.out.println(days.get(i) + ": " + temps.get(i));
                     sum = sum + temps.get(i);
                 }
                 double average = sum / temps.size();
-                System.out.println("Weekly average temperature: " + average + "°");
+                System.out.println("Weekly average temperature: " + average);
             }
             
             else if (input.equals("Monday") || input.equals("Tuesday") || input.equals("Wednesday")
@@ -65,7 +65,7 @@ public class WeeklyTemperatures {
                 // Find which index matches the day entered
                 for (int i = 0; i < days.size(); i++) {
                     if (days.get(i).equals(input)) {
-                        System.out.println(days.get(i) + ": " + temps.get(i) + "°");
+                        System.out.println(days.get(i) + ": " + temps.get(i));
                     }
                 }
             }
